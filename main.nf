@@ -1282,6 +1282,7 @@ if (!params.skipAlignment) {
       picard ${markdup_java_options} MarkDuplicates \\
           INPUT=$bam \\
           OUTPUT=${bam.baseName}.markDups.bam \\
+	  TMP_DIR='./tmp' \\
           METRICS_FILE=${bam.baseName}.markDups_metrics.txt \\
           REMOVE_DUPLICATES=false \\
           ASSUME_SORTED=true \\
